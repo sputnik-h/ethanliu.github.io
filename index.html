@@ -7,7 +7,7 @@
     <title>Yixuan (Ethan) Liu</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #e5e3de;
@@ -16,21 +16,46 @@
         header {
             display: flex;
             justify-content: space-between;
-            padding: 20px;
+            padding: 20px 40px;
+            align-items: center;
         }
         header h1 {
+            font-size: 18px;
             margin: 0;
+        }
+        header nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
         }
         .container {
             display: flex;
-            flex-direction: row;
+            justify-content: space-around;
             align-items: center;
-            justify-content: center;
-            padding: 40px;
+            padding: 50px 100px;
         }
         .text-section {
             flex: 1;
-            padding: 20px;
+            max-width: 500px;
+        }
+        .text-section h2 {
+            font-size: 36px;
+            margin: 0 0 10px;
+        }
+        .text-section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 14px;
         }
         .profile-pic {
             border-radius: 50%;
@@ -38,27 +63,32 @@
             height: 350px;
             object-fit: cover;
         }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
         .resume {
             display: flex;
-            flex-direction: row;
-            padding: 40px;
+            padding: 40px 100px;
+            justify-content: space-between;
         }
         .resume-section {
             flex: 1;
             padding: 20px;
         }
+        .resume-section h3 {
+            font-size: 24px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .resume-section h4 {
+            font-size: 18px;
+            margin: 15px 0 5px;
+        }
         .projects {
             text-align: center;
-            padding: 40px;
+            padding: 40px 100px;
+        }
+        .projects h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
         .project-container {
             display: flex;
@@ -66,7 +96,7 @@
             flex-wrap: wrap;
         }
         .project {
-            width: 300px;
+            width: 250px;
             margin: 20px;
             text-align: center;
         }
@@ -75,6 +105,18 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        footer a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -110,7 +152,6 @@
         <ul>
             <li>The Analytics Edge: Data, Models, and Effective Decisions (Statistical Modeling and Optimization)</li>
             <li>Applied Modern Statistical Learning Methods (Machine Learning)</li>
-            <!-- Add more courses as needed -->
         </ul>
     </div>
     <div class="resume-section">
@@ -121,7 +162,6 @@
         <ul>
             <li>Implemented proof of concept machine learning project in Python...</li>
             <li>Assessed client competitors’ online sales platforms...</li>
-            <!-- Add more experience details as needed -->
         </ul>
     </div>
 </section>
@@ -143,6 +183,11 @@
         </div>
     </div>
 </section>
+
+<footer>
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+</footer>
 
 </body>
 </html>
