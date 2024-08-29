@@ -4,15 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Animation</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Yixuan (Ethan) Liu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e5e3de;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        .text-section {
+            flex: 1;
+            padding: 20px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .resume {
+            display: flex;
+            flex-direction: row;
+            padding: 40px;
+        }
+        .resume-section {
+            flex: 1;
+            padding: 20px;
+        }
+        .projects {
+            text-align: center;
+            padding: 40px;
+        }
+        .project-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .project {
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+        }
+        .project img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-    <div class="typing-container">
-        <span id="typed-text"></span>
-        <span class="cursor">|</span>
-    </div>
 
-    <script src="script.js"></script>
+<header>
+    <h1>Yixuan (Ethan) Liu</h1>
+    <nav>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="text-section">
+        <h2>Yixuan (Ethan) Liu</h2>
+        <p>刘奕轩</p>
+        <p>Hi, my name is Ethan. I’m a M.Sc in Business Analytics student at USC Marshall School, an alum from UCLA, and an aspiring data scientist.</p>
+        <p>I love data, tech, nature and life.</p>
+        <a href="#" class="button">Learn More</a>
+    </div>
+    <img src="profile-pic.jpg" alt="Ethan Liu" class="profile-pic">
+</div>
+
+<section class="resume">
+    <div class="resume-section">
+        <h3>Education</h3>
+        <h4>Master of Science in Business Analytics</h4>
+        <p>2023.08 – 2025.05</p>
+        <p>University of Southern California, Los Angeles, CA</p>
+        <p>GPA: 3.95/4.0</p>
+        <p>The studies focus on applying statistical, machine learning, and deep learning methods...</p>
+        <ul>
+            <li>The Analytics Edge: Data, Models, and Effective Decisions (Statistical Modeling and Optimization)</li>
+            <li>Applied Modern Statistical Learning Methods (Machine Learning)</li>
+            <!-- Add more courses as needed -->
+        </ul>
+    </div>
+    <div class="resume-section">
+        <h3>Professional Experience</h3>
+        <h4>Management Consulting Intern, Data Operations and Governance</h4>
+        <p>2022.08 – 2023.02</p>
+        <p>KPMG Advisory (China) Limited, Shanghai, China</p>
+        <ul>
+            <li>Implemented proof of concept machine learning project in Python...</li>
+            <li>Assessed client competitors’ online sales platforms...</li>
+            <!-- Add more experience details as needed -->
+        </ul>
+    </div>
+</section>
+
+<section class="projects">
+    <h3>Projects</h3>
+    <div class="project-container">
+        <div class="project">
+            <img src="project1.jpg" alt="Streaming Influence Project">
+            <p>Streaming Influence: Analyzing the Causal Impact of Twitch Viewership on Active Player Engagement</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="AI Footwear Classification">
+            <p>Real vs. AI: Classifying Authenticity in Footwear Images with Deep Learning</p>
+        </div>
+        <div class="project">
+            <img src="project3.jpg" alt="ConsultPro Elite Team">
+            <p>ConsultPro Elite Team</p>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
