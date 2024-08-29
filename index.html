@@ -2,56 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Typing Animation</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-        }
-        .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-    </header>
-    <div class="container">
-        <div class="card">
-            <h2>About Me</h2>
-            <p>Hello! I am an aspiring ML and data science enthusiast currently pursuing my MS in Business Analytics at USC Marshall. I am passionate about leveraging data to drive insights and innovation.</p>
-        </div>
-        <div class="card">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/username/project1">Project 1</a></li>
-                <li><a href="https://github.com/username/project2">Project 2</a></li>
-                <li><a href="https://github.com/username/project3">Project 3</a></li>
-            </ul>
-        </div>
-        <div class="card">
-            <h2>Contact</h2>
-            <p>You can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
-        </div>
+    <div class="typing-container">
+        <span id="typed-text"></span>
+        <span class="cursor">|</span>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
